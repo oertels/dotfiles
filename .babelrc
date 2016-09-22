@@ -5,6 +5,12 @@
         "stage-0"
     ],
     "plugins": [
-        "transform-object-rest-spread"
-    ]
+        "transform-object-rest-spread",
+        "transform-flow-strip-types",
+        ["typecheck", {
+            "disable": {
+                "production": true
+            }
+        }]
+     ]
 }
