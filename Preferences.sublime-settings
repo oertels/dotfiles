@@ -1,13 +1,38 @@
 {
 	"bold_folder_labels": true,
 	"caret_style": "phase",
-	"color_scheme": "Packages/Theme - Brogrammer/brogrammer.tmTheme",
+	"color_scheme": "Packages/User/SublimeLinter/Oceanic Next Italic (SL).tmTheme",
 	"fade_fold_buttons": false,
+	"file_exclude_patterns":
+    [
+    	"*.pyc", "*.pyo", "*.exe", "*.dll", "*.obj","*.o", 
+    	"*.a", "*.lib", "*.so", "*.dylib", "*.ncb", "*.sdf", 
+    	"*.suo", "*.pdb", "*.idb", ".DS_Store", "*.class", 
+    	"*.psd", "*.db", "*.sublime-workspace",
+		"*._.*",
+		"*.DS_Store"
+    ],
+	"folder_exclude_patterns":
+	[
+		".svn",
+		".git",
+		".hg",
+		"CVS",
+		"dist",
+		"node_modules",
+		"bower_components",
+		"coverage"
+	],
 	"font_face": "Fira Code",
-	"font_size": 16,
+	"font_size": 18,
+	"git_binary": "/usr/bin/git",
 	"highlight_line": true,
+	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
+		"GitGutter",
+		"React Templates",
+		"Redux Snippets",
 		"Vintage"
 	],
 	"line_padding_bottom": 2,
@@ -17,6 +42,11 @@
 		80,
 		120
 	],
-	"theme": "Brogrammer.sublime-theme",
-	"translate_tabs_to_spaces": true
+	"show_errors_inline": true,
+	"show_full_path": true,
+	"show_status": true,
+	"tab_size": 4,
+	"theme": "Agila Origin.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"word_wrap": false
 }
