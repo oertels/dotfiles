@@ -20,6 +20,18 @@
     "rules": {
         "react/jsx-uses-react": "error",
         "react/jsx-uses-vars": "error",
+        "react/jsx-no-bind": 2,
+        "react/jsx-indent": [4, 4],
+        "react/no-multi-comp": 2,
+        "react/require-render-return": 2,
+        "react/no-unknown-property": 2,
+        "react/no-string-refs": 2,
+        "react/no-direct-mutation-state": 2,
+        "react/no-did-update-set-state": 2,
+        "react/no-did-mount-set-state": 2,
+        "react/no-deprecated": 2
+
+        "lines-around-comment": 0,
         "import/no-unresolved": [
             2, {"commonjs": true, "amd": true}
         ],
