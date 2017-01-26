@@ -17,21 +17,26 @@
         "react",
         "import"
     ],
+    "settings": {
+        "import/resolve": {
+            "extensions": [".js", ".jsx"]
+        }
+    },
     "rules": {
         "react/jsx-uses-react": "error",
         "react/jsx-uses-vars": "error",
-        "react/jsx-no-bind": 2,
-        "react/jsx-indent": [4, 4],
-        "react/no-multi-comp": 2,
-        "react/require-render-return": 2,
-        "react/no-unknown-property": 2,
-        "react/no-string-refs": 2,
-        "react/no-direct-mutation-state": 2,
-        "react/no-did-update-set-state": 2,
-        "react/no-did-mount-set-state": 2,
-        "react/no-deprecated": 2
+        "react/prefer-stateless-function": 2,  // Enforce stateless React Components to be written as a pure function
+        "react/jsx-no-bind": 2,  // No .bind() or Arrow Functions in JSX Props
+        "react/jsx-indent": [2, 2],  // Validate JSX indentation
+        "react/no-multi-comp": 2,  // Prevent multiple component definition per file
+        "react/sort-comp": 2,  // Enforce component methods order
+        "react/require-render-return": 2,  // Enforce ES5 or ES6 class for returning value in render function
+        "react/no-unknown-property": 2,  // Prevent usage of unknown DOM property
+        "react/no-string-refs": 2,  // Prevent using string references
+        "react/no-direct-mutation-state": 2,  // Prevent direct mutation of this.state
+        "react/no-did-update-set-state": 2,  // Prevent usage of setState in componentDidUpdate
+        "react/no-deprecated": 2,  // Prevent usage of deprecated methods
 
-        "lines-around-comment": 0,
         "import/no-unresolved": [
             2, {"commonjs": true, "amd": true}
         ],
@@ -50,6 +55,7 @@
             "error",
             "unix"
         ],
+        "lines-around-comment": 0,
         "quotes": [
             "error",
             "single"
